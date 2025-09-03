@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #35424a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #e8491d;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 0 15px;
+            }
+
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #35424a;
+            border-bottom: 2px solid #e8491d;
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #e8491d;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Arpit Jaiswal</h1>
+        <p>Computer Science Student</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a computer science student passionate about web development and programming. I enjoy creating websites and learning new technologies.</p>
+        <p><strong>Email:</strong> arpitjaiswal699@gmail.com</p>
+        <p><strong>Phone:</strong> 8467848916 </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Personal Blog</td>
+                <td>A simple blog website using HTML and CSS</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>To-Do List App</td>
+                <td>A web application to manage daily tasks</td>
+                <td>2024</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Java</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <table>
+            <tr>
+                <th>S. No.</th>
+                <th>Class/Degree</th>
+                <th>Board/University</th>
+                <th>Marks</th>
+                <th>Division</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Bachelor of Computer Science</td>
+                <td>ABES ENGINEERING COLLEGE</td>
+                <td>85%</td>
+                <td>First</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Higher Secondary</td>
+                <td>CBSE Board</td>
+                <td>88.87%</td>
+                <td>First</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Secondary School</td>
+                <td>CBSE Board</td>
+                <td>90%</td>
+                <td>First</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Arpit Jaiswal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
