@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <center>
+        <h1>Student Registration Form</h1>
+
+        <form>
+            <table>
+                <!-- Personal Information -->
+                <tr>
+                    <td align="right"><label for="fullname">Full Name:</label></td>
+                    <td><input type="text" id="fullname" name="fullname" required></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="email">Email Address:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td align="right"><label for="confirm_password">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm_password" name="confirm_password" required></td>
+                </tr>
+
+                <!-- Address -->
+                <tr>
+                    <td align="right"><label for="address">Address:</label></td>
+                    <td><textarea id="address" name="address" rows="3" cols="22"></textarea></td>
+                </tr>
+
+                <!-- Course Selection -->
+                <tr>
+                    <td align="right"><label for="course">Course Selection:</label></td>
+                    <td>
+                        <select id="course" name="course">
+                            <option value="">Select a course</option>
+                            <option value="cs">Computer Science</option>
+                            <option value="eng">Engineering</option>
+                            <option value="bus">Business Administration</option>
+                            <option value="med">Medicine</option>
+                            <option value="law">Law</option>
+                            <option value="art">Arts</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Gender -->
+                <tr>
+                    <td align="right">Gender:</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+
+                <!-- Hobbies -->
+                <tr>
+                    <td align="right">Hobbies:</td>
+                    <td>
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <label for="sports">Sports</label><br>
+
+                        <input type="checkbox" id="music" name="hobbies" value="music">
+                        <label for="music">Music</label><br>
+
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="reading">Reading</label><br>
+
+                        <input type="checkbox" id="travel" name="hobbies" value="travel">
+                        <label for="travel">Travel</label><br>
+
+                        <input type="checkbox" id="coding" name="hobbies" value="coding">
+                        <label for="coding">Coding</label>
+                    </td>
+                </tr>
+
+                <!-- Submit Buttons -->
+                <tr>
+                    <td colspan="2" align="center">
+                        <br>
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Clear Form">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
